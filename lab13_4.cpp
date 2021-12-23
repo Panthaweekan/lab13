@@ -1,6 +1,8 @@
 #include<iostream>
-
 using namespace std;
+
+template <class Swapping69>
+Swapping69 mySwap(Swapping69 & , Swapping69 &);
 
 int main(){
 	int x, y;
@@ -30,3 +32,11 @@ int main(){
 	return 0;
 }
 
+template <class Swapping69>
+Swapping69 mySwap(Swapping69 &x , Swapping69 &y)
+{
+	Swapping69 FakeY = y;
+	y = x;
+	x = FakeY;
+	return x;
+}
